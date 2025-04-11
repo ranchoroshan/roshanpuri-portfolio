@@ -1,60 +1,62 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Roshan Puri | Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Roshan Puri - IoT Enthusiast</title>
   <link rel="stylesheet" href="styles.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <nav class="navbar">
-    <div class="logo">Roshan Puri</div>
-    <button class="hamburger" id="hamburger"><i class="fas fa-bars"></i></button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-      <li><button id="toggleTheme">🌙</button></li>
-    </ul>
-  </nav>
-
-  <header class="fade-in">
-    <h1>Hi, I'm Roshan Puri</h1>
-    <p>Enthusiast in Internet of Things | Data Analyst</p>
+  <header class="header">
+    <div class="container">
+      <div class="logo">Roshan Puri</div>
+      <nav class="navbar" id="navbar">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#blog">Blog</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
+    </div>
   </header>
-
-  <section id="about" class="slide-up">
-    <h2>About Me</h2>
-    <p>I’m passionate about building smart and connected systems using IoT. I also have experience in Microsoft Office, Data Analysis, and Java development.</p>
-  </section>
-
-  <section id="projects" class="slide-up delay">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>IoT Weather Station</h3>
-      <p>A real-time sensor-based weather station project using microcontrollers and APIs.</p>
-    </div>
-    <div class="project">
-      <h3>Data Insights Dashboard</h3>
-      <p>Analyzed data trends using Excel and built dashboards with interactive charts.</p>
-    </div>
-  </section>
-
-  <section id="contact" class="slide-up delay-more">
-    <h2>Contact Me</h2>
-    <form id="contactForm">
-      <input type="text" placeholder="Your Name" required />
-      <input type="email" placeholder="Your Email" required />
-      <textarea placeholder="Your Message" required></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-
-  <footer>
-    <p>&copy; 2025 Roshan Puri. All rights reserved.</p>
-  </footer>
-
+  <main>
+    <section id="home" class="hero">
+      <img src="profile.webp" alt="Roshan Puri" class="profile-img">
+      <h1>Hello, I'm Roshan Puri</h1>
+      <p>IoT Enthusiast | Java Developer | Data Analyst</p>
+    </section>
+    <section id="about" class="section">
+      <h2>About Me</h2>
+      <p>I am passionate about the Internet of Things and have experience with Java, Data Analysis, and Microsoft Office tools.</p>
+      <p><strong>Hobbies:</strong> Travelling, playing tabla, and spending time in nature.</p>
+    </section>
+    <section id="skills" class="section">
+      <h2>Skills</h2>
+      <ul>
+        <li>Internet of Things</li>
+        <li>Java Programming</li>
+        <li>Microsoft Office</li>
+        <li>Data Analysis</li>
+      </ul>
+    </section>
+    <section id="blog" class="section">
+      <h2>IoT Blog</h2>
+      <article>
+        <h3>What is IoT?</h3>
+        <p>The Internet of Things (IoT) refers to a network of physical objects that communicate and exchange data over the Internet.</p>
+      </article>
+    </section>
+    <section id="contact" class="section">
+      <h2>Contact Me</h2>
+      <form action="https://formspree.io/f/mnqelray" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="_replyto" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
   <script src="script.js"></script>
 </body>
 </html>
