@@ -4,59 +4,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Roshan Puri - IoT Enthusiast</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Roshan Puri - Portfolio</title>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="logo">Roshan Puri</div>
-      <nav class="navbar" id="navbar">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#blog">Blog</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
-    </div>
-  </header>
-  <main>
-    <section id="home" class="hero">
-      <img src="profile.webp" alt="Roshan Puri" class="profile-img">
-      <h1>Hello, I'm Roshan Puri</h1>
-      <p>IoT Enthusiast | Java Developer | Data Analyst</p>
-    </section>
-    <section id="about" class="section">
-      <h2>About Me</h2>
-      <p>I am passionate about the Internet of Things and have experience with Java, Data Analysis, and Microsoft Office tools.</p>
-      <p><strong>Hobbies:</strong> Travelling, playing tabla, and spending time in nature.</p>
-    </section>
-    <section id="skills" class="section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Internet of Things</li>
-        <li>Java Programming</li>
-        <li>Microsoft Office</li>
-        <li>Data Analysis</li>
+  <nav class="navbar">
+    <div class="nav-container">
+      <h2 class="logo">Roshan</h2>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#blogs">Blogs</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-    </section>
-    <section id="blog" class="section">
-      <h2>IoT Blog</h2>
-      <article>
-        <h3>What is IoT?</h3>
-        <p>The Internet of Things (IoT) refers to a network of physical objects that communicate and exchange data over the Internet.</p>
-      </article>
-    </section>
-    <section id="contact" class="section">
-      <h2>Contact Me</h2>
-      <form action="https://formspree.io/f/mnqelray" method="POST">
-        <input type="text" name="name" placeholder="Your Name" required />
-        <input type="email" name="_replyto" placeholder="Your Email" required />
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
+      <div class="menu-toggle" id="menu-toggle">☰</div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <img src="profile.webp" alt="Roshan Puri" class="profile-pic"/>
+    <h1>Roshan Puri</h1>
+    <p>IoT Enthusiast | Traveller | Tabla Player | Nature Lover</p>
+  </header>
+
+  <section class="about" id="about">
+    <h2><strong>About Me</strong></h2>
+    <p>With a solid background in Microsoft Office, Data Analysis, and Java, I am passionate about technological advancements, particularly in the Internet of Things. My work reflects a combination of analytical skills and curiosity for automation, aiming to innovate and simplify everyday tasks.</p>
+  </section>
+
+  <section class="blogs" id="blogs">
+    <h2><strong>Blogs on IoT and Java</strong></h2>
+    <article>
+      <h3>Getting Started with IoT</h3>
+      <p>The Internet of Things (IoT) is revolutionizing the world. By enabling physical devices to connect and communicate, IoT is making homes smarter, farming more efficient, and healthcare more responsive. With sensors and data, we can achieve seamless automation and proactive systems that enhance our lives daily.</p>
+    </article>
+    <article>
+      <h3>Java Programming: The Evergreen Language</h3>
+      <p>Java stands tall in the programming world due to its object-oriented structure and robust ecosystem. It supports multi-platform development, enterprise solutions, and large-scale systems with frameworks like Spring and tools like IntelliJ. Java’s performance, security, and community make it a favorite among developers worldwide.</p>
+    </article>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2><strong>Contact Me</strong></h2>
+    <form action="mailto:hello@roshanpuri.com.np" method="post" enctype="text/plain">
+      <input type="text" name="name" placeholder="Your Name" required/>
+      <input type="email" name="email" placeholder="Your Email" required/>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </section>
+
   <script src="script.js"></script>
 </body>
 </html>
