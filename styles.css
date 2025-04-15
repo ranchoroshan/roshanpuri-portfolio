@@ -6,14 +6,13 @@
   font-family: 'Segoe UI', sans-serif;
 }
 body {
-  background: linear-gradient(270deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
-  background-size: 800% 800%;
-  animation: backgroundShift 20s ease infinite;
-  color: #fff;
+  background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+  background-attachment: fixed;
+  color: #333;
   scroll-behavior: smooth;
 }
 .navbar {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: #333;
   position: fixed;
   width: 100%;
   z-index: 1000;
@@ -28,8 +27,8 @@ body {
   padding: 0 1rem;
 }
 .logo {
-  color: #ffeb3b;
-  font-size: 1.8rem;
+  color: #f8c102;
+  font-size: 2rem;
 }
 .nav-links {
   list-style: none;
@@ -43,7 +42,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 .nav-links li a:hover {
-  color: #ff9800;
+  color: #f8c102;
 }
 .menu-toggle {
   display: none;
@@ -53,8 +52,7 @@ body {
 }
 .hero {
   text-align: center;
-  padding: 6rem 1rem 3rem;
-  animation: slideDown 1.5s ease-out;
+  padding: 7rem 1rem 3rem;
 }
 .profile-pic {
   width: 170px;
@@ -68,23 +66,30 @@ body {
 .profile-pic:hover {
   transform: scale(1.1);
 }
-h1 {
-  font-size: 3rem;
-  color: #ffeb3b;
+.border-name {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 3px solid #f8c102;
+  border-radius: 10px;
+  font-size: 2.8rem;
+  color: #333;
 }
 h2 {
   font-size: 2rem;
-  color: #ff9800;
+  color: #000;
   margin-bottom: 1rem;
 }
 section {
   padding: 2rem 1rem;
   margin: 0 auto;
   max-width: 900px;
-  background: rgba(0,0,0,0.5);
+  background: rgba(255,255,255,0.85);
   border-radius: 16px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.4);
+  box-shadow: 0 0 30px rgba(0,0,0,0.1);
   margin-bottom: 2rem;
+}
+section ul {
+  padding-left: 1.2rem;
 }
 form {
   display: flex;
@@ -94,7 +99,7 @@ input, textarea {
   padding: 0.75rem;
   margin: 0.5rem 0;
   border-radius: 8px;
-  border: none;
+  border: 1px solid #ccc;
 }
 button {
   background: #4CAF50;
@@ -108,14 +113,12 @@ button {
 button:hover {
   background: #388e3c;
 }
-@keyframes backgroundShift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-@keyframes slideDown {
-  from { transform: translateY(-50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
+footer {
+  background: #222;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  font-style: italic;
 }
 
 /* Mobile Responsive */
@@ -123,7 +126,7 @@ button:hover {
   .nav-links {
     display: none;
     flex-direction: column;
-    background: #222;
+    background: #444;
     position: absolute;
     right: 1rem;
     top: 60px;
