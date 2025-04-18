@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/roshanpuri-portfolio/static/css/main.3aadfef1.css",
+    "main.js": "/roshanpuri-portfolio/static/js/main.8bf7be8a.js",
+    "index.html": "/roshanpuri-portfolio/index.html",
+    "main.3aadfef1.css.map": "/roshanpuri-portfolio/static/css/main.3aadfef1.css.map",
+    "main.8bf7be8a.js.map": "/roshanpuri-portfolio/static/js/main.8bf7be8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3aadfef1.css",
+    "static/js/main.8bf7be8a.js"
+  ]
+}
